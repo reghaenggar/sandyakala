@@ -78,7 +78,6 @@ function cariGugus() {
   showState('loading');
   document.getElementById('searchBtn').disabled = true;
 
-  // Simulasi delay pencarian (realistis)
   setTimeout(() => {
     let found = null;
     let foundAnggota = null;
@@ -139,12 +138,10 @@ function showState(state) {
   document.getElementById('resultState').style.display = state === 'result' ? 'flex' : 'none';
 }
 
-// Enter key support
 document.addEventListener('keydown', e => {
   if (e.key === 'Enter') cariGugus();
 });
 
-// Auto-focus next field pada tanggal
 document.getElementById('inputDD').addEventListener('input', function () {
   if (this.value.length === 2) document.getElementById('inputMM').focus();
 });

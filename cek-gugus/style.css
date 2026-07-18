@@ -24,7 +24,6 @@
       overflow-x: hidden;
     }
 
-    /* BG PATTERN */
     body::before {
       content: '';
       position: fixed;
@@ -38,7 +37,6 @@
       z-index: 0;
     }
 
-    /* ── NAVBAR ── */
     nav {
       position: sticky;
       top: 0;
@@ -84,7 +82,6 @@
       margin-left: auto;
     }
 
-    /* ── MAIN WRAPPER ── */
     main {
       position: relative;
       z-index: 1;
@@ -93,7 +90,6 @@
       padding: 48px 24px 80px;
     }
 
-    /* ── HEADER ── */
     .page-header {
       margin-bottom: 40px;
     }
@@ -112,7 +108,6 @@
       line-height: 1.7;
     }
 
-    /* ── LAYOUT GRID ── */
     .content-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -120,7 +115,6 @@
       gap: 20px;
     }
 
-    /* ── PANEL BASE ── */
     .panel {
       background: #0c023b;
       border: 2px dashed var(--pink);
@@ -135,7 +129,6 @@
       margin-bottom: 20px;
     }
 
-    /* ── FORM PANEL ── */
     .form-panel {
       grid-column: 1;
       grid-row: 1;
@@ -274,7 +267,6 @@
       }
     }
 
-    /* ── SIMASTER PANEL ── */
     .simaster-panel {
       grid-column: 1;
       grid-row: 2;
@@ -293,7 +285,6 @@
       color: var(--ungu);
     }
 
-    /* ── HASIL PANEL ── */
     .hasil-panel {
       grid-column: 2;
       grid-row: 1 / 3;
@@ -301,7 +292,6 @@
       flex-direction: column;
     }
 
-    /* Empty state */
     .empty-state {
       flex: 1;
       display: flex;
@@ -334,7 +324,6 @@
       color: var(--putih);
     }
 
-    /* Loading state */
     .loading-state {
       flex: 1;
       display: none;
@@ -364,7 +353,6 @@
       font-size: .9rem;
     }
 
-    /* Result state */
     .result-state {
       display: none;
       flex-direction: column;
@@ -494,7 +482,6 @@
       border-radius: 100px;
     }
 
-    /* Error state */
     .error-state {
       display: none;
       flex-direction: column;
@@ -522,7 +509,6 @@
       line-height: 1.6;
     }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       nav {
         padding: 14px 20px;

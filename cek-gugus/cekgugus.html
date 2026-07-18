@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cek Gugus – SANYAKALA 2026</title>
+  <meta name="description" content="Website resmi PKKMB SANDYAKALA 2026 FEB UNY">
+  <meta property="og:title" content="SANDYAKALA 2026">
+  <!-- <meta property="og:image" content="https://reghaenggar.github.io/sandyakala/asets/chip.png"> -->
+  <title>Cek Gugus SANYAKALA 2026</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="asets/chip.png" type="image/png">
 
-
-  <!-- NAVBAR -->
+<body>
+  <!-- PRELOADER -->
   <nav>
-    <a href="../VISUAL/index.html" class="back-btn">
+    <a href="../index.html#aktivitas" class="back-btn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
         stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6" />
@@ -20,26 +24,36 @@
     <span class="nav-title">SANYAKALA 2026</span>
   </nav>
 
-  <!-- MAIN -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <linearGradient id="puzzleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="rgb(230, 27, 122)" />
+        <stop offset="100%" stop-color="#040033" />
+      </linearGradient>
+    </defs>
+  </svg>
+
   <main>
-    <div class="puzzle-piece" style="top: 60%; left: 1%; width: 60px; height: 60px; opacity: .4; --rot: 20deg;">
+    <div class="puzzle-piece" style="top: 90%; right: 80%; width: 45px; height: 45px; opacity: .9; --rot: -15deg;">
       <svg viewBox="-30 -30 160 160" fill="none">
-        <path d="M0,0 L30,0 C30,10 35,20 50,20 C65,20 70,10 70,0 L100,0 L100,100 L0,100 L0,70
-      C-10,70 -20,65 -20,50 C-20,35 -10,30 0,30 Z" fill="rgb(230, 27, 122)" />
+        <path d="M0,0 L100,0 L100,30 C110,30 120,35 120,50 C120,65 110,70 100,70 L100,100 L70,100
+      C70,90 65,80 50,80 C35,80 30,90 30,100 L0,100 L0,70
+      C-10,70 -20,65 -20,50 C-20,35 -10,30 0,30 Z" fill="url(#puzzleGradient)" />
+      </svg>
+    </div>
+    <div class=" puzzle-piece" style="top: 15%; right: 90%; width: 45px; height: 45px; opacity: .9; --rot: 40deg;">
+      <svg viewBox="-30 -30 160 160" fill="none">
+        <path d="M0,0 L100,0 L100,30 C110,30 120,35 120,50 C120,65 110,70 100,70 L100,100 L70,100
+      C70,90 65,80 50,80 C35,80 30,90 30,100 L0,100 L0,0 Z" fill="url(#puzzleGradient)" />
       </svg>
     </div>
 
-    <div class="puzzle-piece" style="top: 80%; left: 80%; width: 100px; height: 100px; opacity: .45; --rot: 12deg;">
-      <svg viewBox="-30 -30 160 160" fill="none">
-        <path d="M0,0 L30,0 C30,-10 35,-20 50,-20 C65,-20 70,-10 70,0 L100,0 L100,100 L0,100 L0,70
-      C10,70 20,65 20,50 C20,35 10,30 0,30 Z" fill="rgb(230, 27, 122)" />
-      </svg>
-    </div>
-
-    <div class="puzzle-piece" style="top: 5%; left: 30%; width: 80px; height: 80px; opacity: .5; --rot: -12deg;">
+    <div class=" puzzle-piece" style="top: 0%; right: 10%; width: 110px; height: 110px; opacity: .9; --rot: -25deg;">
       <svg viewBox="-30 -30 160 160" fill="none">
         <path d="M0,0 L30,0 C30,-10 35,-20 50,-20 C65,-20 70,-10 70,0 L100,0 L100,30
-      C90,30 80,35 80,50 C80,65 90,70 100,70 L100,100 L0,100 L0,0 Z" fill="rgb(230, 27, 122)" />
+      C110,30 120,35 120,50 C120,65 110,70 100,70 L100,100 L70,100
+      C70,90 65,80 50,80 C35,80 30,90 30,100 L0,100 L0,70
+      C10,70 20,65 20,50 C20,35 10,30 0,30 Z" fill="url(#puzzleGradient)" />
       </svg>
     </div>
     <div class="page-header">
@@ -49,7 +63,6 @@
 
     <div class="content-grid">
 
-      <!-- FORM PANEL -->
       <div class="panel form-panel">
         <div class="panel-title">Masukkan Data Mahasiswa</div>
         <div class="form-row">
@@ -73,24 +86,20 @@
         <button class="search-btn" id="searchBtn" onclick="cariGugus()">Cari Gugusmu</button>
       </div>
 
-      <!-- HASIL PANEL -->
       <div class="panel hasil-panel" id="hasilPanel">
         <div class="panel-title">Hasil Gugusmu</div>
 
-        <!-- Empty state -->
         <div class="empty-state" id="emptyState">
           <div class="empty-icon">🔍</div>
           <div class="empty-title">Belum ada Hasil</div>
           <div class="empty-sub">Masukkan data dulu yuk di<br><strong>Masukkan Data Mahasiswa</strong></div>
         </div>
 
-        <!-- Loading state -->
         <div class="loading-state" id="loadingState">
           <div class="spinner"></div>
           <div class="loading-text">Sedang mencari gugusmu...</div>
         </div>
 
-        <!-- Error state -->
         <div class="error-state" id="errorState">
           <div class="error-icon">😔</div>
           <div class="error-title">Data tidak ditemukan</div>
@@ -98,7 +107,6 @@
           </div>
         </div>
 
-        <!-- Result state -->
         <div class="result-state" id="resultState">
           <div class="result-gugus-name" id="resultGugusName">Gugus <span id="resultGugusNama"></span></div>
           <div class="result-divider"></div>
@@ -128,6 +136,5 @@
     </div>
   </main>
   <script src="script.js"></script>
-  </body>
-
+</body>
 </html>
