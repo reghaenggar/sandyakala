@@ -121,14 +121,14 @@ const wawasanData = [
     tag: "Ormawa",
     title: "ORMAWA (Organisasi Mahasiswa)",
     slides: [
-      { image: "../asets/himadiksi.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
-      { image: "../asets/himaaksi.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
-      { image: "../asets/himamenajemen.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
-      { image: "../asets/himapadp.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
-      { image: "../asets/himape.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
-      { image: "../asets/alfatih.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
-      { image: "../asets/dpm.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
-      { image: "../asets/inspire.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
+      { image: "asets/himadiksi.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
+      { image: "asets/himaaksi.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
+      { image: "asets/himamenajemen.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
+      { image: "asets/himapadp.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
+      { image: "asets/himape.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
+      { image: "asets/alfatih.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
+      { image: "asets/dpm.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
+      { image: "asets/inspire.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
       { image: "../asets/kristal.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
       { image: "../asets/kspm.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." }
     ]
