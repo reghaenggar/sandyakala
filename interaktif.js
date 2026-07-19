@@ -118,19 +118,19 @@ const wawasanData = [
     ]
   },
   {
-    tag: "Ormawa",
     title: "ORMAWA (Organisasi Mahasiswa)",
     slides: [
-      { image: "asets/himadiksi.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
-      { image: "asets/himaaksi.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
-      { image: "asets/himamenajemen.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
-      { image: "asets/himapadp.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
-      { image: "asets/himape.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
-      { image: "asets/alfatih.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
-      { image: "asets/dpm.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
-      { image: "asets/inspire.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." },
-      { image: "../asets/kristal.png", text: "Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
-      { image: "../asets/kspm.png", text: "Info kontak dan kegiatan rutin tiap organisasi mahasiswa." }
+      { image: "asets/himadiksi.png", text: "HIMA DIKSI (Himpunan Mahasiswa Pendidikan Akuntansi) adalah organisasi kemahasiswaan tingkat jurusan di Fakultas Ekonomi dan Bisnis, Universitas Negeri Yogyakarta. Mereka mengadakan berbagai kegiatan akademik dan non-akademik, seperti lomba LCCA (Lomba Cerdas Cermat Akuntansi) dan bakti sosial." },
+      { image: "asets/himaaksi.png", text: "HIMA AKSI FEB UNY (Himpunan Mahasiswa Akuntansi) adalah organisasi kemahasiswaan resmi di bawah Program Studi Akuntansi, Fakultas Ekonomi dan Bisnis, Universitas Negeri Yogyakarta. Organisasi ini menjadi wadah pengembangan minat, bakat, dan aspirasi mahasiswa akuntansi." },
+      { image: "asets/himamenajemen.png", text: "HIMA Manajemen FEB UNY (Himpunan Mahasiswa Manajemen Fakultas Ekonomi dan Bisnis Universitas Negeri Yogyakarta) adalah organisasi kemahasiswaan tingkat jurusan yang mewadahi aspirasi, pengembangan minat, dan bakat mahasiswa program studi S1 Manajemen. Sekretariat Hima Manajemen berlokasi di Gedung Merah, Kampus FEB UNY.Organisasi ini secara aktif menyelenggarakan berbagai program kerja dan kegiatan bagi mahasiswa, seperti seminar, bimbingan akademik, bakti sosial, dan acara keakraban. Untuk informasi terbaru mengenai kegiatan, rekrutmen, atau kepengurusan, Anda dapat memantau akun resmi mereka.Booklet lengkap berisi profil organisasi kemahasiswaan di UNY." },
+      { image: "asets/himapadp.png", text: "HIMA PADP FEB UNY (Himpunan Mahasiswa Pendidikan Administrasi Perkantoran) adalah organisasi kemahasiswaan di Fakultas Ekonomi dan Bisnis, Universitas Negeri Yogyakarta. Organisasi ini mewadahi pengembangan minat, bakat, dan penalaran mahasiswa program studi Pendidikan Administrasi Perkantoran melalui berbagai program kerja seperti seminar dan ajang perlombaan nasional." },
+      { image: "asets/himape.png", text: "HIMA PE UNY atau Himpunan Mahasiswa Pendidikan Ekonomi di Fakultas Ekonomi dan Bisnis (FEB) Universitas Negeri Yogyakarta. Organisasi ini mewadahi mahasiswa prodi Pendidikan Ekonomi, menyelenggarakan berbagai kegiatan akademik dan kemahasiswaan seperti penyambutan mahasiswa baru, dan dipimpin melalui kepengurusan tertentu (seperti Kabinet Arsa Vikasa)." },
+      { image: "asets/alfatih.png", text: "UKMF KM Al-Fatih FEB UNY adalah organisasi dakwah kampus yang bertujuan membentuk mahasiswa muslim yang bertaqwa & memiliki karakter Islam yang utuh sesuai Al-Qur'an dan As-Sunnah." },
+      { image: "asets/dpm.png", text: "DPM KM FEB UNY (Dewan Perwakilan Mahasiswa Keluarga Mahasiswa Fakultas Ekonomi dan Bisnis Universitas Negeri Yogyakarta) adalah lembaga legislatif tertinggi di tingkat fakultas. Organisasi ini bertugas menampung aspirasi mahasiswa, membuat peraturan, mengaudit, dan mengawasi kinerja Badan Eksekutif Mahasiswa (BEM) KM FEB UNY." },
+      {image : "asets/bem.jpg", text: "BEM KM FEB UNY (Badan Eksekutif Mahasiswa Keluarga Mahasiswa Fakultas Ekonomi dan Bisnis Universitas Negeri Yogyakarta) adalah lembaga eksekutif tertinggi di tingkat fakultas. Organisasi ini bertugas menjalankan program kerja, mengelola kegiatan kemahasiswaan, dan mewakili mahasiswa dalam berbagai forum." },
+      { image: "asets/inspire.png", text: "INSPIRE FEB UNY (Unit Kegiatan Mahasiswa Fakultas Inspire) adalah organisasi kewirausahaan di Fakultas Ekonomi dan Bisnis, Universitas Negeri Yogyakarta. Berdiri sejak 2015, wadah ini melatih mahasiswa membangun jiwa wirausaha melalui empat divisi: Event Organizer, Human Resources Development, Business, dan Public Relation." },
+      { image: "asets/kristal.png", text: "UKMF Penelitian KRISTAL (Komunitas Riset dan Penalaran) adalah Unit Kegiatan Mahasiswa Fakultas di bidang riset, penalaran, dan keilmuan yang berada di Fakultas Ekonomi dan Bisnis, Universitas Negeri Yogyakarta (FEB UNY). UKM ini mewadahi mahasiswa yang memiliki minat dalam penelitian, karya tulis ilmiah, dan kompetisi bisnis." },
+      { image: "asets/kspm.png", text: "Kelompok Studi Pasar Modal (KSPM) FEB UNY adalah Unit Kegiatan Mahasiswa tingkat Fakultas (UKMF) di Universitas Negeri Yogyakarta yang berfokus pada edukasi dan pengembangan literasi keuangan serta investasi. UKM ini mengadakan berbagai program rutin, seperti pelatihan pasar modal, studi banding, dan seminar nasional." }
     ]
   },
   {
