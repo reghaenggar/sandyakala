@@ -183,25 +183,10 @@ input::placeholder {
   color: #000;
 }
 
-.tanggal-row {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
 
-.tanggal-row input {
-  width: 56px;
-  text-align: center;
-}
-
-.tanggal-row input.yyyy {
-  width: 72px;
-}
-
-.tanggal-sep {
-  color: var(--putih);
-  font-weight: 700;
-  font-size: 1.1rem;
+.form-group.nama {
+  flex: 1;
+  width: 100%;
 }
 
 .hint {

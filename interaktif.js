@@ -38,7 +38,7 @@ document.addEventListener('keydown', (e) => {
 (function () {
   const preloader = document.getElementById('preloader');
   const fill = document.getElementById('preloaderFill');
-  if (!preloader || !fill) return;  
+  if (!preloader || !fill) return;
 
   const images = document.querySelectorAll('img');
   let loaded = 0;
@@ -114,7 +114,7 @@ const wawasanData = [
       { image: "", text: "fasilitas olahraga kampus gratis yang berada di Taman Randu." },
       { image: "info-2.jpg", text: "Daftar organisasi mahasiswa yang aktif di lingkungan Fakultas Ekonomi dan Bisnis UNY." },
       { image: "info-3.jpg", text: "Panduan lengkap lainnya seputar kegiatan SANDYAKALA 2026." },
-      { image: "info-4.jpg", text: "abcb"}
+      { image: "info-4.jpg", text: "abcb" }
     ]
   },
   {
@@ -127,7 +127,7 @@ const wawasanData = [
       { image: "asets/himape.png", text: "HIMA PE UNY atau Himpunan Mahasiswa Pendidikan Ekonomi di Fakultas Ekonomi dan Bisnis (FEB) Universitas Negeri Yogyakarta. Organisasi ini mewadahi mahasiswa prodi Pendidikan Ekonomi, menyelenggarakan berbagai kegiatan akademik dan kemahasiswaan seperti penyambutan mahasiswa baru, dan dipimpin melalui kepengurusan tertentu (seperti Kabinet Arsa Vikasa)." },
       { image: "asets/alfatih.png", text: "UKMF KM Al-Fatih FEB UNY adalah organisasi dakwah kampus yang bertujuan membentuk mahasiswa muslim yang bertaqwa & memiliki karakter Islam yang utuh sesuai Al-Qur'an dan As-Sunnah." },
       { image: "asets/dpm.png", text: "DPM KM FEB UNY (Dewan Perwakilan Mahasiswa Keluarga Mahasiswa Fakultas Ekonomi dan Bisnis Universitas Negeri Yogyakarta) adalah lembaga legislatif tertinggi di tingkat fakultas. Organisasi ini bertugas menampung aspirasi mahasiswa, membuat peraturan, mengaudit, dan mengawasi kinerja Badan Eksekutif Mahasiswa (BEM) KM FEB UNY." },
-      {image : "asets/bem.jpg", text: "BEM KM FEB UNY (Badan Eksekutif Mahasiswa Keluarga Mahasiswa Fakultas Ekonomi dan Bisnis Universitas Negeri Yogyakarta) adalah lembaga eksekutif tertinggi di tingkat fakultas. Organisasi ini bertugas menjalankan program kerja, mengelola kegiatan kemahasiswaan, dan mewakili mahasiswa dalam berbagai forum." },
+      { image: "asets/bem.jpg", text: "BEM KM FEB UNY (Badan Eksekutif Mahasiswa Keluarga Mahasiswa Fakultas Ekonomi dan Bisnis Universitas Negeri Yogyakarta) adalah lembaga eksekutif tertinggi di tingkat fakultas. Organisasi ini bertugas menjalankan program kerja, mengelola kegiatan kemahasiswaan, dan mewakili mahasiswa dalam berbagai forum." },
       { image: "asets/inspire.png", text: "INSPIRE FEB UNY (Unit Kegiatan Mahasiswa Fakultas Inspire) adalah organisasi kewirausahaan di Fakultas Ekonomi dan Bisnis, Universitas Negeri Yogyakarta. Berdiri sejak 2015, wadah ini melatih mahasiswa membangun jiwa wirausaha melalui empat divisi: Event Organizer, Human Resources Development, Business, dan Public Relation." },
       { image: "asets/kristal.png", text: "UKMF Penelitian KRISTAL (Komunitas Riset dan Penalaran) adalah Unit Kegiatan Mahasiswa Fakultas di bidang riset, penalaran, dan keilmuan yang berada di Fakultas Ekonomi dan Bisnis, Universitas Negeri Yogyakarta (FEB UNY). UKM ini mewadahi mahasiswa yang memiliki minat dalam penelitian, karya tulis ilmiah, dan kompetisi bisnis." },
       { image: "asets/kspm.png", text: "Kelompok Studi Pasar Modal (KSPM) FEB UNY adalah Unit Kegiatan Mahasiswa tingkat Fakultas (UKMF) di Universitas Negeri Yogyakarta yang berfokus pada edukasi dan pengembangan literasi keuangan serta investasi. UKM ini mengadakan berbagai program rutin, seperti pelatihan pasar modal, studi banding, dan seminar nasional." }

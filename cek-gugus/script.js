@@ -10,71 +10,21 @@ const dataGugus = [
     jadwal: 'Senin, 07.00 WIB',
     anggota: [
       { nim: '26808244001', nama: 'Regha', ttl: '01/01/2007' },
-      { nim: '26808244002', nama: 'Bela', ttl: '22/07/2007' },
-      { nim: '26808244003', nama: 'Candra', ttl: '10/01/2008' },
-      { nim: '26808244004', nama: 'Dewi', ttl: '05/11/2007' },
-      { nim: '26808244005', nama: 'Eko', ttl: '30/06/2007' },
+      { nim: '26808244002', nama: 'Ali Ahsan', ttl: '22/07/2007' },
+      { nim: '26808244003', nama: 'Ezra', ttl: '10/01/2008' },
+      { nim: '26808244004', nama: 'Aradya', ttl: '05/11/2007' },
+      { nim: '26808244005', nama: 'Raka', ttl: '30/06/2007' },
     ]
-  },
-  // {
-  //   id: 'G002',
-  //   nama: 'Babirusa',
-  //   nomor: 'Gugus 02',
-  //   lokasi: 'Aula Utama',
-  //   pendamping: 'Sari Indah',
-  //   jadwal: 'Senin, 07.30 WIB',
-  //   anggota: [
-  //     { niu: '26808244011', nama: 'Fajar Nugroho', ttl: '12/04/2007' },
-  //     { niu: '26808244012', nama: 'Gita Permata', ttl: '08/09/2007' },
-  //     { niu: '26808244013', nama: 'Hendra Susilo', ttl: '20/12/2007' },
-  //     { niu: '26808244014', nama: 'Indah Lestari', ttl: '03/02/2008' },
-  //     { niu: '26808244015', nama: 'Joko Prabowo', ttl: '17/08/2007' },
-  //   ]
-  // },
-  // {
-  //   id: 'G003',
-  //   nama: 'Cendrawasih',
-  //   nomor: 'Gugus 03',
-  //   lokasi: 'Gedung B Lt. 1',
-  //   pendamping: 'Budi Santoso',
-  //   jadwal: 'Selasa, 07.00 WIB',
-  //   anggota: [
-  //     { niu: '26808244021', nama: 'Kartika Sari', ttl: '25/05/2007' },
-  //     { niu: '26808244022', nama: 'Lingga Permana', ttl: '14/10/2007' },
-  //     { niu: '26808244023', nama: 'Maya Putri', ttl: '07/03/2008' },
-  //     { niu: '26808244024', nama: 'Nanda Kusuma', ttl: '19/06/2007' },
-  //     { niu: '26808244025', nama: 'Omar Fauzi', ttl: '28/11/2007' },
-  //   ]
-  // },
-  // {
-  //   id: 'G004',
-  //   nama: 'Dugong',
-  //   nomor: 'Gugus 04',
-  //   lokasi: 'Lapangan Tengah',
-  //   pendamping: 'Putri Wahyuni',
-  //   jadwal: 'Selasa, 07.30 WIB',
-  //   anggota: [
-  //     { niu: '26808244031', nama: 'Pandu Wibowo', ttl: '11/01/2008' },
-  //     { niu: '26808244032', nama: 'Qori Rahmadani', ttl: '23/07/2007' },
-  //     { niu: '26808244033', nama: 'Rini Susanti', ttl: '06/04/2007' },
-  //     { niu: '26808244034', nama: 'Sigit Prakoso', ttl: '18/09/2007' },
-  //     { niu: '26808244035', nama: 'Tari Anggraini', ttl: '02/12/2007' },
-  //   ]
-  // },
+  }
 ];
 
 function cariGugus() {
-  const nim = document.getElementById('inputNIM').value.trim();
-  const dd = document.getElementById('inputDD').value.trim().padStart(2, '0');
-  const mm = document.getElementById('inputMM').value.trim().padStart(2, '0');
-  const yyyy = document.getElementById('inputYYYY').value.trim();
+  const nama = document.getElementById('inputNama').value.trim();
 
-  if (!nim || !dd || !mm || !yyyy) {
-    alert('Mohon lengkapi semua data ya!');
+  if (!nama) {
+    alert('Mohon isi nama kamu ya!');
     return;
   }
-
-  const ttlInput = `${dd}/${mm}/${yyyy}`;
 
   showState('loading');
   document.getElementById('searchBtn').disabled = true;
@@ -85,7 +35,7 @@ function cariGugus() {
 
     for (const gugus of dataGugus) {
       for (const anggota of gugus.anggota) {
-        if (anggota.nim === nim && anggota.ttl === ttlInput) {
+        if (anggota.nama.toLowerCase() === nama.toLowerCase()) {
           found = gugus;
           foundAnggota = anggota;
           break;
@@ -122,7 +72,7 @@ function tampilkanHasil(gugus, anggota) {
             <div class="member-avatar ${isMe ? 'highlight-av' : ''}">${inisial}</div>
             <div>
               <div class="member-name">${m.nama}</div>
-              <div class="member-niu">${m.niu}</div>
+              <div class="member-niu">${m.nim}</div>
             </div>
             ${isMe ? '<span class="member-you">Kamu</span>' : ''}
           </div>
@@ -141,11 +91,4 @@ function showState(state) {
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Enter') cariGugus();
-});
-
-document.getElementById('inputDD').addEventListener('input', function () {
-  if (this.value.length === 2) document.getElementById('inputMM').focus();
-});
-document.getElementById('inputMM').addEventListener('input', function () {
-  if (this.value.length === 2) document.getElementById('inputYYYY').focus();
 });

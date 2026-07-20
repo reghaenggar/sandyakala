@@ -63,28 +63,17 @@
 
     <div class="content-grid">
 
-      <div class="panel form-panel">
-        <div class="panel-title">Masukkan Data Mahasiswa</div>
-        <div class="form-row">
-          <div class="form-group niu">
-            <label>Nomor Induk Mahasiswa (NIM)</label>
-            <input type="text" id="inputNIM" placeholder="Ketik NIM mu disini" maxlength="20">
-            <span class="hint">Contoh: 26808244022</span>
-          </div>
-          <div class="form-group tanggal">
-            <label>Tanggal Lahir</label>
-            <div class="tanggal-row">
-              <input type="text" id="inputDD" placeholder="DD" maxlength="2">
-              <span class="tanggal-sep">/</span>
-              <input type="text" id="inputMM" placeholder="MM" maxlength="2">
-              <span class="tanggal-sep">/</span>
-              <input type="text" id="inputYYYY" placeholder="YYYY" maxlength="4" class="yyyy">
-            </div>
-            <span class="hint">Contoh: 01/01/2007</span>
-          </div>
-        </div>
-        <button class="search-btn" id="searchBtn" onclick="cariGugus()">Cari Gugusmu</button>
-      </div>
+<div class="panel form-panel">
+  <div class="panel-title">Masukkan Data Mahasiswa</div>
+  <div class="form-row">
+    <div class="form-group nama">
+      <label>Nama Lengkap</label>
+      <input type="text" id="inputNama" placeholder="Ketik namamu disini" maxlength="50">
+      <span class="hint">Contoh: Regha</span>
+    </div>
+  </div>
+  <button class="search-btn" id="searchBtn" onclick="cariGugus()">Cari Gugusmu</button>
+</div>
 
       <div class="panel hasil-panel" id="hasilPanel">
         <div class="panel-title">Hasil Gugusmu</div>
@@ -137,4 +126,5 @@
   </main>
   <script src="script.js"></script>
 </body>
+
 </html>
