@@ -133,7 +133,7 @@ nav.scrolled {
   font-size: 1.3rem;
   font-weight: 900;
   background: linear-gradient( rgb(230, 27, 122), #FFFFFF);
-  webkit-background-clip: text;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   letter-spacing: 0;
@@ -436,7 +436,7 @@ nav.scrolled {
   font-weight: 900;
   letter-spacing: .08em;
   background: linear-gradient(rgb(230, 27, 122), #FFFFFF);
-  webkit-background-clip: text;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   text-shadow: 0 0 20px rgba(230, 27, 122, .6);
@@ -504,7 +504,7 @@ nav.scrolled {
   letter-spacing: .22em;
   text-transform: uppercase;
   background: linear-gradient(to right, rgb(230, 27, 122), #FFFFFF);
-  webkit-background-clip: text;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   padding: 7px 20px;
@@ -522,7 +522,7 @@ nav.scrolled {
 
 .hero-title span {
   background: linear-gradient(to right, rgb(230, 27, 122), #FFFFFF);
-  webkit-background-clip: text;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
@@ -641,7 +641,7 @@ section {
   letter-spacing: .25em;
   text-transform: uppercase;
   background: linear-gradient(to right, rgb(230, 27, 122), #FFFFFF);
-  webkit-background-clip: text;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   margin-bottom: 12px;
@@ -659,7 +659,7 @@ section {
 .section-title em {
   font-style: italic;
   background: linear-gradient(to right, rgb(230, 27, 122), #FFFFFF);
-  webkit-background-clip: text;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
@@ -1062,7 +1062,7 @@ section {
 
 .aktivitas .section-eyebrow {
   background: linear-gradient(to right, rgb(230, 27, 122), #FFFFFF);
-  webkit-background-clip: text;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   z-index: 2;
