@@ -114,10 +114,9 @@ function tampilkanHasil(gugus, anggota) {
   const pemanduList = document.getElementById('pemanduList');
   pemanduList.innerHTML = '';
   gugus.pemandu.forEach(p => {
-    const inisial = p.nama.split(' ').map(n => n[0]).slice(0, 2).join('');
     pemanduList.innerHTML += `
           <div class="pemandu-item">
-            <div class="pemandu-avatar">${inisial}</div>
+            <div class="pemandu-avatar"></div>
             <div>
               <div class="pemandu-name">${p.nama}</div>
               <a href="${p.cp}" target="_blank" class="pemandu-cp">Hubungi via WhatsApp</a>

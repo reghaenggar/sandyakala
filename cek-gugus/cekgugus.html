@@ -56,6 +56,13 @@
       C10,70 20,65 20,50 C20,35 10,30 0,30 Z" fill="url(#puzzleGradient)" />
       </svg>
     </div>
+
+      <div class="clouds-layer">
+      <img src="../asets/cloud.png" alt="" class="cloud cloud-1">
+      <img src="../asets/cloud.png" alt="" class="cloud cloud-2">
+      <img src="../asets/cloud.png" alt="" class="cloud cloud-3">
+    </div>
+    
     <div class="page-header">
       <h1>Cek Gugus</h1>
       <p>Masukkan namamu untuk mengetahui gugus SANYAKALA dan informasi terkait!</p>
@@ -69,7 +76,7 @@
           <div class="form-group nama">
             <label>Nama Lengkap</label>
             <input type="text" id="inputNama" placeholder="Ketik namamu disini" maxlength="60">
-            <span class="hint">Contoh: Shelo Aidil Elyano</span>
+            <span class="hint">Contoh: John Doe</span>
           </div>
         </div>
         <button class="search-btn" id="searchBtn" onclick="cariGugus()">Cari Gugusmu</button>
@@ -97,7 +104,7 @@
         </div>
 
         <div class="result-state" id="resultState">
-          <div class="result-gugus-name">Gugus <span id="resultGugusNama"></span></div>
+          <div class="result-gugus-name"> <span id="resultGugusNama"></span></div>
           <div class="result-divider"></div>
           <div class="result-info-grid">
             <div class="result-info-item">
