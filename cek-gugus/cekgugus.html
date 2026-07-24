@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Website resmi PKKMB SANDYAKALA 2026 FEB UNY">
   <meta property="og:title" content="SANDYAKALA 2026">
-  <title>Cek Gugus SANYAKALA 2026</title>
+  <title>Cek Gugus SANDYAKALA 2026</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="asets/chip.png" type="image/png">
 </head>
@@ -21,7 +21,7 @@
       </svg>
       Kembali ke Aktivitas
     </a>
-    <span class="nav-title">SANYAKALA 2026</span>
+    <span class="nav-title">SANDYAKALA 2026</span>
   </nav>
 
   <svg width="0" height="0" style="position:absolute">
@@ -58,22 +58,22 @@
     </div>
     <div class="page-header">
       <h1>Cek Gugus</h1>
-      <p>Masukkan datamu untuk mengetahui gugus SANYAKALA dan informasi terkait!</p>
+      <p>Masukkan namamu untuk mengetahui gugus SANYAKALA dan informasi terkait!</p>
     </div>
 
     <div class="content-grid">
 
-<div class="panel form-panel">
-  <div class="panel-title">Masukkan Data Mahasiswa</div>
-  <div class="form-row">
-    <div class="form-group nama">
-      <label>Nama Lengkap</label>
-      <input type="text" id="inputNama" placeholder="Ketik namamu disini" maxlength="50">
-      <span class="hint">Contoh: Regha</span>
-    </div>
-  </div>
-  <button class="search-btn" id="searchBtn" onclick="cariGugus()">Cari Gugusmu</button>
-</div>
+      <div class="panel form-panel">
+        <div class="panel-title">Masukkan Nama Mahasiswa</div>
+        <div class="form-row">
+          <div class="form-group nama">
+            <label>Nama Lengkap</label>
+            <input type="text" id="inputNama" placeholder="Ketik namamu disini" maxlength="60">
+            <span class="hint">Contoh: Shelo Aidil Elyano</span>
+          </div>
+        </div>
+        <button class="search-btn" id="searchBtn" onclick="cariGugus()">Cari Gugusmu</button>
+      </div>
 
       <div class="panel hasil-panel" id="hasilPanel">
         <div class="panel-title">Hasil Gugusmu</div>
@@ -81,7 +81,7 @@
         <div class="empty-state" id="emptyState">
           <div class="empty-icon">🔍</div>
           <div class="empty-title">Belum ada Hasil</div>
-          <div class="empty-sub">Masukkan data dulu yuk di<br><strong>Masukkan Data Mahasiswa</strong></div>
+          <div class="empty-sub">Masukkan nama dulu yuk di<br><strong>Masukkan Nama Mahasiswa</strong></div>
         </div>
 
         <div class="loading-state" id="loadingState">
@@ -91,39 +91,32 @@
 
         <div class="error-state" id="errorState">
           <div class="error-icon">😔</div>
-          <div class="error-title">Data tidak ditemukan</div>
-          <div class="error-sub">NIM atau tanggal lahir yang kamu masukkan tidak sesuai.<br>Coba periksa kembali datamu.
+          <div class="error-title">Nama tidak ditemukan</div>
+          <div class="error-sub">Nama yang kamu masukkan tidak sesuai.<br>Coba periksa kembali penulisan namamu.
           </div>
         </div>
 
         <div class="result-state" id="resultState">
-          <div class="result-gugus-name" id="resultGugusName">Gugus <span id="resultGugusNama"></span></div>
+          <div class="result-gugus-name">Gugus <span id="resultGugusNama"></span></div>
           <div class="result-divider"></div>
           <div class="result-info-grid">
             <div class="result-info-item">
-              <div class="result-info-label">Nomor Gugus</div>
-              <div class="result-info-value" id="resultNomor"></div>
+              <div class="result-info-label">Klaster</div>
+              <div class="result-info-value" id="resultKlaster"></div>
             </div>
             <div class="result-info-item">
-              <div class="result-info-label">Lokasi</div>
-              <div class="result-info-value" id="resultLokasi"></div>
-            </div>
-            <div class="result-info-item">
-              <div class="result-info-label">Pendamping</div>
-              <div class="result-info-value" id="resultPendamping"></div>
-            </div>
-            <div class="result-info-item">
-              <div class="result-info-label">Jadwal Kumpul</div>
-              <div class="result-info-value" id="resultJadwal"></div>
+              <div class="result-info-label">Program Studi</div>
+              <div class="result-info-value" id="resultProdi"></div>
             </div>
           </div>
 
-          <div class="result-member-title">Silakan untuk menguhubungi pendamping gugusmu pada nomor yang tersedia</div>
-          <div class="member-list" id="memberList"></div>
+          <div class="result-member-title">Silakan untuk menghubungi pendamping gugusmu pada nomor yang tersedia</div>
+          <div class="pemandu-list" id="pemanduList"></div>
         </div>
       </div>
     </div>
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script src="script.js"></script>
 </body>
 
