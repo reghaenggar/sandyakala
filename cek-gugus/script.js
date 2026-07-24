@@ -109,8 +109,7 @@ function cariGugus() {
 function tampilkanHasil(gugus, anggota) {
   document.getElementById('resultGugusNama').textContent = gugus.nama;
   document.getElementById('resultKlaster').textContent = gugus.klaster;
-  document.getElementById('resultProdi').textContent = anggota.prodi;
-
+  
   const pemanduList = document.getElementById('pemanduList');
   pemanduList.innerHTML = '';
   gugus.pemandu.forEach(p => {
