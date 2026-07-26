@@ -922,7 +922,6 @@ section {
   position: relative;
   border-radius: 15px;
   padding: 8px;
-  background: var(--pink);
   overflow: hidden;
   cursor: pointer;
   transition: transform .3s, box-shadow .3s;
@@ -969,14 +968,15 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, .35);
+  background: transparent;
   font-size: 1.6rem;
   color: var(--putih);
-  transition: background .3s;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .6));
+  transition: opacity .3s;
 }
 
 .video-card:hover .video-play {
-  background: rgba(230, 27, 122, .55);
+  opacity: .85;
 }
 
 .video-label {
@@ -993,10 +993,10 @@ section {
 }
 
 .video-caption {
-  background: rgba(255, 255, 255, .06);
+  background: linear-gradient(to right, rgba(230, 27, 122, 0.237), #ffffff32);
   padding: 10px 12px;
-  font-size: .78rem;
-  color: rgba(255, 255, 255, .8);
+  font-size: .90rem;
+  color: var(--putih);
   font-weight: 600;
   text-align: center;
   line-height: 1.4;
@@ -1075,7 +1075,7 @@ section {
 }
 
 .aktivitas .section-body {
-  color: white;
+  color: var(--putih);
   margin: 0 auto;
   z-index: 2;
 }
@@ -1111,7 +1111,6 @@ section {
 
 .card-img {
   width: 100%;
-  aspect-ratio: 4/3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1132,10 +1131,10 @@ section {
   z-index: 2;
 }
 
-.card:hover .card-img-inner {
-  transform: scale(1.1) rotate(-2deg);
+/* .card:hover .card-img-inner {
+  transform: scale(1.06);
   z-index: 2;
-}
+} */
 
 .card-1 .card-img,
 .card-2 .card-img {
@@ -1151,10 +1150,10 @@ section {
 
 .card-1 .card-img-inner,
 .card-2 .card-img-inner {
-  position: relative;
+  position: static;
   inset: auto;
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 10px;
   overflow: hidden;
   z-index: 2;
@@ -1166,17 +1165,18 @@ section {
 
 .card-1 .card-img-inner img,
 .card-2 .card-img-inner img {
-  width: 65%;
+  width: 90%;
   height: auto;
   z-index: 2;
   object-fit: contain;
   filter: drop-shadow(0 8px 20px rgba(0, 0, 0, .3));
+  transform: scale(1.1);
   transition: transform .4s;
 }
 
 .card-1:hover .card-img-inner img,
 .card-2:hover .card-img-inner img {
-  transform: scale(1.06);
+  transform: scale(1.18);
   z-index: 2;
 }
 
@@ -1599,8 +1599,9 @@ footer {
 .detail-image {
   flex: 1;
   aspect-ratio: 4/3;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   border-radius: 14px;
   background-color: #eee;
 }
