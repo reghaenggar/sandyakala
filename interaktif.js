@@ -172,28 +172,28 @@ const wawasanData = [
   isPhoto: false,
   slides: [
     { image: "asets/1.png",
-      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+      text: "Latar Belakang PKKMB SANDYAKALA 2026."
     },
         { image: "asets/2.png",
-      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+      text: "Latar Belakang PKKMB SANDYAKALA 2026."
     },
         { image: "asets/3.png",
       text: "Latar Belakang PKKMB SANDYAKALA 2026."
     },
         { image: "asets/4.png",
-      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+      text: "Latar Belakang PKKMB SANDYAKALA 2026."
     },
         { image: "asets/5.png",
-      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+      text: "Latar Belakang PKKMB SANDYAKALA 2026."
     },
         { image: "asets/6.png",
-      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+      text: "Latar Belakang PKKMB SANDYAKALA 2026."
     },
         { image: "asets/7.png",
-      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+      text: "Latar Belakang PKKMB SANDYAKALA 2026."
     },
         { image: "asets/8.png",
-      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+      text: "Latar Belakang PKKMB SANDYAKALA 2026."
     }
   ]
 }
