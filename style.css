@@ -995,7 +995,7 @@ section {
 .video-caption {
   background: linear-gradient(to right, rgba(230, 27, 122, 0.237), #ffffff32);
   padding: 10px 12px;
-  font-size: .90rem;
+  font-size: .90\rem;
   color: var(--putih);
   font-weight: 600;
   text-align: center;
@@ -1603,7 +1603,11 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 14px;
-  background-color: #eee;
+  background-color: var(--pink);
+}
+
+.detail-image.is-photo {
+  background-size: cover;  
 }
 
 .detail-text-box {

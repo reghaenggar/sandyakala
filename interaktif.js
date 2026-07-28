@@ -110,15 +110,17 @@ const wawasanData = [
   {
     tag: "Info Umum",
     title: "Fasilitas Kampus",
+    isPhoto: true,
     slides: [
-      { image: "", text: "fasilitas olahraga kampus gratis yang berada di Taman Randu." },
-      { image: "info-2.jpg", text: "Daftar organisasi mahasiswa yang aktif di lingkungan Fakultas Ekonomi dan Bisnis UNY." },
-      { image: "info-3.jpg", text: "Panduan lengkap lainnya seputar kegiatan SANDYAKALA 2026." },
-      { image: "info-4.jpg", text: "abcb" }
+      { image: "asets/tax.jpeg", text: "fasilitas olahraga kampus gratis yang berada di Taman Randu." },
+      { image: "asets/perpus.png", text: "Daftar organisasi mahasiswa yang aktif di lingkungan Fakultas Ekonomi dan Bisnis UNY." },
+      { image: "asets/masjid.jpeg", text: "Panduan lengkap lainnya seputar kegiatan SANDYAKALA 2026." },
+      { image: "asets/eec.jpeg", text: "abcb" }
     ]
   },
   {
     title: "ORMAWA (Organisasi Mahasiswa)",
+    isPhoto: false,
     slides: [
       { image: "asets/himadiksi.png", 
         text: "HIMA DIKSI (Himpunan Mahasiswa Pendidikan Akuntansi) adalah organisasi kemahasiswaan tingkat jurusan di Fakultas Ekonomi dan Bisnis, Universitas Negeri Yogyakarta. Mereka mengadakan berbagai kegiatan akademik dan non-akademik, seperti lomba LCCA (Lomba Cerdas Cermat Akuntansi) dan bakti sosial.",
@@ -148,7 +150,7 @@ const wawasanData = [
         text: "DPM KM FEB UNY (Dewan Perwakilan Mahasiswa Keluarga Mahasiswa Fakultas Ekonomi dan Bisnis Universitas Negeri Yogyakarta) adalah lembaga legislatif tertinggi di tingkat fakultas. Organisasi ini bertugas menampung aspirasi mahasiswa, membuat peraturan, mengaudit, dan mengawasi kinerja Badan Eksekutif Mahasiswa (BEM) KM FEB UNY.",
         instagram: "https://www.instagram.com/dpmkmfebuny/"
       },
-      { image: "asets/bem.jpg", 
+      { image: "asets/bem.png", 
         text: "BEM KM FEB UNY (Badan Eksekutif Mahasiswa Keluarga Mahasiswa Fakultas Ekonomi dan Bisnis Universitas Negeri Yogyakarta) adalah lembaga eksekutif tertinggi di tingkat fakultas. Organisasi ini bertugas menjalankan program kerja, mengelola kegiatan kemahasiswaan, dan mewakili mahasiswa dalam berbagai forum.",
         instagram: "https://www.instagram.com/bemkmfebuny/"
       },
@@ -168,10 +170,31 @@ const wawasanData = [
   },
   {
   tag: "PKKMB",
-  title: "SANDYAKALA",
+  title: "Sandyakala",
+  isPhoto: false,
   slides: [
-    {
-      pdf: "/asets/materi-sandyakala.pdf",
+    { image: "/asets/1.png",
+      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+    },
+        { image: "/asets/2.png",
+      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+    },
+        { image: "/asets/3.png",
+      text: "Latar Belakang PKKMB SANDYAKALA 2026."
+    },
+        { image: "/asets/4.png",
+      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+    },
+        { image: "/asets/5.png",
+      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+    },
+        { image: "/asets/6.png",
+      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+    },
+        { image: "/asets/7.png",
+      text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
+    },
+        { image: "/asets/8.png",
       text: "Materi lengkap PKKMB SANDYAKALA 2026 dalam bentuk dokumen."
     }
   ]
@@ -201,6 +224,9 @@ function renderDetailModal() {
   const slide = item.slides[currentSlide];
   const imgEl = document.getElementById('detailImage');
   const pdfEl = document.getElementById('detailPDF');
+
+  imgEl.style.backgroundImage = `url(${slide.image})`;
+  imgEl.classList.toggle('is-photo', item.isPhoto === true);
 
   if (slide.pdf) {
     imgEl.style.display = 'none';
