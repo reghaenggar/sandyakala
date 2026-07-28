@@ -110,10 +110,10 @@ const wawasanData = [
     title: "Fasilitas Kampus",
     isPhoto: true,
     slides: [
-      { image: "asets/tax.jpeg", text: "fasilitas olahraga kampus gratis yang berada di Taman Randu." },
-      { image: "asets/perpus.png", text: "Daftar organisasi mahasiswa yang aktif di lingkungan Fakultas Ekonomi dan Bisnis UNY." },
-      { image: "asets/masjid.jpeg", text: "Panduan lengkap lainnya seputar kegiatan SANDYAKALA 2026." },
-      { image: "asets/eec.jpeg", text: "abcb" }
+      { image: "asets/tax.jpeg", text: "Tax Center FEB UNY adalah unit kegiatan di bawah Fakultas Ekonomi dan Bisnis Universitas Negeri Yogyakarta yang berfungsi sebagai pusat pendidikan, pelatihan, sosialisasi, dan layanan konsultasi perpajakan." },
+      { image: "asets/perpus.png", text: "Perpustakaan FEB UNY berfungsi untuk mendukung keberhasilan dan percepatan studi mahasiswa dengan menyediakan fasilitas membaca, referensi, serta literatur akademik di bidang ekonomi dan bisnis." },
+      { image: "asets/masjid.jpeg", text: "Musala atau Masjid Al Fatih FEB UNY digunakan sebagai sarana tempat ibadah salat, pusat kegiatan keagamaan, serta wadah pembinaan karakter mahasiswa muslim di lingkungan Fakultas Ekonomi dan Bisnis Universitas Negeri Yogyakarta" },
+      { image: "asets/eec.jpeg", text: "EEC (Entrepreneurship Education Center) di Fakultas Ekonomi dan Bisnis Universitas Negeri Yogyakarta berfungsi sebagai laboratorium kewirausahaan dan sarana pengembangan wirausaha bagi mahasiswa." }
     ]
   },
   {
