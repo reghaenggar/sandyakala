@@ -1131,11 +1131,6 @@ section {
   z-index: 2;
 }
 
-/* .card:hover .card-img-inner {
-  transform: scale(1.06);
-  z-index: 2;
-} */
-
 .card-1 .card-img,
 .card-2 .card-img {
   background: rgba(31, 8, 51, .5);

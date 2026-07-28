@@ -34,7 +34,6 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeVideo();
 });
 
-// PRELOADER
 (function () {
   const preloader = document.getElementById('preloader');
   const fill = document.getElementById('preloaderFill');
@@ -71,7 +70,6 @@ document.addEventListener('keydown', (e) => {
   }, 6000);
 })();
 
-// HERO
 window.addEventListener('scroll', () => {
   const heroBg = document.querySelector('.hero-bg');
   const offset = window.scrollY * 0.4;
